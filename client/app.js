@@ -14,7 +14,7 @@ function importPageComponent(name, pages) {
 
 createInertiaApp({
     resolve: (name) =>
-        importPageComponent(name, import.meta.glob("../views/**/*.vue")),
+        importPageComponent(name, import.meta.glob("./views/**/*.vue")),
     setup({el, App, props, plugin}) {
         createApp({render: () => h(App, props)})
             .use(plugin)

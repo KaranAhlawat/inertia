@@ -9,8 +9,7 @@
   (ig/halt)
   (ig/reset)
   (ig/reset-all)
-  (+ 1 2)
-  ,)
+  (+ 1 2))
 
 
 

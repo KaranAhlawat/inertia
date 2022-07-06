@@ -19,7 +19,6 @@
      ["/users" {:get {:handler #'h/users-handler}}]
      ["/settings" {:get {:handler #'h/settings-handler}}]
      ["/logout" {:post (fn [_]
-                         (println "Logged user out")
                          {:status 200
                           :body "logged user out."})}]]
     {:data {:middleware [parameters-middleware
@@ -39,5 +38,4 @@
 (comment
   (app {:request-method :get, :uri "/"})
   (app {:request-method :get, :uri "/users"})
-  (app {:request-method :post :uri "/logout"})
-  ,)
+  (app {:request-method :post :uri "/logout"}))

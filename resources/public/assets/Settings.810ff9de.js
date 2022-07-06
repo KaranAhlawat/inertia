@@ -1,1 +1,0 @@
-import{_ as t,N as o}from"./Nav.28422fd3.js";import{r as s,o as a,c as n,a as r,F as c,b as _}from"./index.e4b0ec37.js";const p={components:{Nav:o}},l=_("h1",{class:"text-4xl font-bold"},"Settings",-1);function m(d,f,i,N,u,v){const e=s("Nav");return a(),n(c,null,[l,r(e)],64)}var g=t(p,[["render",m]]);export{g as default};

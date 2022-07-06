@@ -4,3 +4,4 @@ node_modules/
 .clj-kondo/
 .cpcache/
 inertia.iml
+resources/

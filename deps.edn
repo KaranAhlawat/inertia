@@ -1,4 +1,4 @@
-{:paths ["src/clj" "resources"]
+{:paths ["server" "resources"]
  :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
          org.clojure/clojurescript {:mvn/version "1.11.60"}
          org.clojure/core.async {:mvn/version "1.5.648"}
@@ -10,7 +10,7 @@
          selmer/selmer {:mvn/version "1.12.52"}}
 
  :aliases
- {:dev {:extra-paths ["dev"]
+ {:dev {:extra-paths ["dev-clj"]
         :extra-deps {integrant/repl {:mvn/version "0.3.2"}}}}}
 
 

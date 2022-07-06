@@ -3,10 +3,11 @@ import vue from "@vitejs/plugin-vue"
 
 export default defineConfig(({ command }) => {
   return {
-    root: './resources',
+    root: './client',
     build: {
       manifest: true,
-      outDir: 'public/',
+      outDir: '../resources/',
+      emptyOutDir: true
     },
     plugins: [
       vue()

@@ -10,7 +10,7 @@
 (def asset-version "1")
 
 (defn template [data-page]
-  (html/render-file "public/index.html" {:page data-page}))
+  (html/render-file "index.html" {:page data-page}))
 
 (def app
   (ring/ring-handler
@@ -27,7 +27,9 @@
                          [inertia/wrap-inertia template asset-version]]}})
    (ring/routes
     (ring/create-resource-handler
-     {:path "/"})
+     {:path "/"
+      ;; This is relative to the resource folder.
+      :root "."})
     (ring/redirect-trailing-slash-handler)
     (ring/create-default-handler
      {:not-found (constantly {:status 404
